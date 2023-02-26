@@ -1,17 +1,21 @@
 {
-  "name": "Fundamentos-NodeJS",
+  "name": "fundamentos-nodejs",
   "version": "1.0.0",
+  "type": "module",
+  "description": "Esse é um projeto realizado durante as primeiras aulas do treinamento da rockseat ignite da trilha de NodeJS e tem como por objetivo apresentar os fundamentos da ferramenta",
   "main": "index.js",
-  "repository": "https://github.com/wawa67/Fundamentos-NodeJS.git",
-  "author": "Wallace de Souza <wallace.silvadesouza67@gmail.com>",
-  "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "node --watch src/server.js"
   },
-  "dependencies": {
-    "express": "^4.17.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wawa67/Fundamentos-NodeJS.git"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wawa67/Fundamentos-NodeJS/issues"
+  },
+  "homepage": "https://github.com/wawa67/Fundamentos-NodeJS#readme"
 }
