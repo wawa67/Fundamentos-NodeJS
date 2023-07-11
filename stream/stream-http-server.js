@@ -13,15 +13,18 @@ class InverseNumberStream extends Transform{
 }
 
 const server = http.createServer(async (req,res)=>{
+    //array que vai receber o buffer
     const buffers = []
+    //pega os buffer e não executa nada até ter pego completamente
     for await (const chunck of req){
         buffers.push(chunck)
     }
-
+    //transforma em string
     const fullStreamContent = Buffer.concat(buffers).toString()
+    //exibe no console
     console.log(fullStreamContent)
+    //faz retorno desses dados
     return res.end(fullStreamContent);
-    
 })
 
 server.listen(3334)
